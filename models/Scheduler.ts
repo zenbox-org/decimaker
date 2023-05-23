@@ -1,13 +1,12 @@
 import { assert, asyncProperty } from 'fast-check'
 import { arbitraryInterval } from 'libs/utils/fast-check/arbitraries/arbitraryInterval'
 import { Interval } from 'luxon'
-import { Task } from '../../../models/Task'
 import { getReplayParameters } from '../../utils/fast-check/replay'
 import { arbitraryTasks } from '../util/fast-check/arbitraryTasks'
 
-export type Scheduler = (interval: Interval, tasks: Task[]) => Promise<ScheduledTask[]>
+export type Scheduler = <Task>(interval: Interval, tasks: Task[]) => Promise<ScheduledTask<Task>[]>
 
-export interface ScheduledTask {
+export interface ScheduledTask<Task> {
   task: Task,
   interval: Interval
 }

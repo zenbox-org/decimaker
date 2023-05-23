@@ -1,5 +1,4 @@
 import { z } from 'zod'
-import { PathSchema } from '../../filesystem/Path'
 import { Id } from '../../generic/models/Id'
 
 export const GoalTypeSchema = z.enum([
@@ -20,7 +19,7 @@ export const GoalSchema = z.object({
 
 export const FileGoalSchema = z.object({
   message: z.string(),
-  path: PathSchema,
+  path: z.string(),
   line: z.number(), // 1-based
 })
 

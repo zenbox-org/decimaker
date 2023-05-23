@@ -1,6 +1,5 @@
 import { BigNumber } from 'libs/utils/BigNumber/utils'
 import { parallel } from 'libs/utils/promise'
-import { Config } from '../../../models/Config'
 
 /**
  * Decisions rules:
@@ -95,10 +94,10 @@ export async function runBestOptionByNumber<Result, Option extends Generator<Res
   return runBestOptionBy(options, estimator, compareNumber)
 }
 
-type ProjectFunc<$Project extends Config, $Result> = (project: $Project) => Promise<$Result>
-
-export function getRunner<$Project extends Config, $Result, $Option extends ProjectFunc<$Project, $Result>>(option: $Option, project: $Project): RunnerOrig<$Project, $Result> {
-  const func = async () => option(project)
-  func.original = option
-  return func
-}
+// type ProjectFunc<$Project extends Config, $Result> = (project: $Project) => Promise<$Result>
+//
+// export function getRunner<$Project extends Config, $Result, $Option extends ProjectFunc<$Project, $Result>>(option: $Option, project: $Project): RunnerOrig<$Project, $Result> {
+//   const func = async () => option(project)
+//   func.original = option
+//   return func
+// }

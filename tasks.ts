@@ -1,8 +1,8 @@
 import { capitalize } from 'lodash-es'
-import { task } from '../../src/task'
+import { ErrorWithDescription } from '../utils/error'
 
 export function OptionNotFound() {
-  return task('Could not find a suitable option', `
+  return new ErrorWithDescription('Could not find a suitable option', `
     The producer has been exhausted without finding a suitable option. Suggested fixes:
     * Modify the producer
     * Modify the reducer
@@ -10,7 +10,7 @@ export function OptionNotFound() {
 }
 
 export function MustBeComposite(name: string) {
-  return task(`${capitalize(name)} must be composite`, `
+  return new ErrorWithDescription(`${capitalize(name)} must be composite`, `
     If you don't have the experience (can't produce a decent amount of input-output pairs to test the function), then you can't write a ${name}.
     
     If you can't write a ${name} directly, you need to compose it from multiple smaller functions.

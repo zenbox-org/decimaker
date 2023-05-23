@@ -1,6 +1,4 @@
 import { stub } from 'libs/utils/todo'
-import { google } from '../../../projects/Decimaker/producers/builders/google'
-import { lazada } from '../../../projects/Decimaker/producers/builders/lazada'
 import { get_greedy_Producer_Reducer } from '../algorithms/get__greedy__batch_producer__reducer'
 import { getProducerBuilder } from '../getProducerBuilder'
 import { Reducer } from '../models/Reducer'
@@ -30,8 +28,8 @@ export async function getProtein() {
     isInformedByExperience: true,
     batchSize: 5,
   })([
-    lazada('protein'),
-    google('buy protein thailand'),
+    // lazada('protein'),
+    // google('buy protein thailand'),
   ]), getReducer())
 }
 

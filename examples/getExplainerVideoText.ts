@@ -1,7 +1,7 @@
 import { strict as assert } from 'assert'
 import { todo } from 'libs/utils/todo'
 import { z } from 'zod'
-import { getNameFromFunction } from '../../../utils/getNameFromFunction'
+import { getNameFromFunction } from '../../utils/Function/getNameFromFunction'
 import { get_greedy_Schema_Producer_Reducer } from '../algorithms/get__greedy__batch_producer__reducer'
 import { settle } from '../get'
 import { getSchemaBuilder } from '../getters/getSchemaBuilderFromHints'

@@ -1,4 +1,4 @@
-import { expect } from 'libs/utils/chai'
+import { expect } from 'libs/chai/init'
 import { z } from 'zod'
 import { Many, One, Two, Zero } from '../../generic/data/allGuesstimates'
 import { ufbn } from '../../generic/models/Estimator'

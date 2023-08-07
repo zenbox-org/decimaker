@@ -1,4 +1,4 @@
-import { expect } from 'libs/utils/chai'
+import { expect } from 'libs/chai/init'
 import { todo } from 'libs/utils/todo'
 import { z } from 'zod'
 import { $ts } from '../../generic/models/Thought'

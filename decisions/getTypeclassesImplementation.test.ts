@@ -1,5 +1,5 @@
 import { test } from '@jest/globals'
-import { expect } from 'libs/utils/chai'
+import { expect } from 'libs/chai/init'
 import { every } from 'lodash-es'
 import { z } from 'zod'
 import { $ts, ThoughtsSchema } from '../../generic/models/Thought'

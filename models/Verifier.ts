@@ -1,7 +1,7 @@
 import { Filter } from '../../generic/models/Filter'
 import { MapperTwoSym } from '../../generic/models/Mapper'
-import { Asserter, AsserterTwoSym } from './Asserter'
-import { Validator } from './Validator'
+import { Asserter, AsserterTwoSym } from '../../utils/Asserter'
+import { MapperErr } from './MapperErr'
 
 /*
  * NOTE: Use original types
@@ -9,7 +9,7 @@ import { Validator } from './Validator'
  * The following code is just for demonstration purposes
  */
 
-export type VerifierReturnErrors<Val, Err> = Validator<Val, Err>
+export type VerifierReturnErrors<Val, Err> = MapperErr<Val, Err>
 
 export type VerifierReturnBoolean<Val> = Filter<Val>
 

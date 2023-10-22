@@ -1,5 +1,5 @@
 import { every } from 'lodash-es'
-import { FilterP } from '../../generic/models/Filter'
+import { FilterP } from '../../utils/Filter'
 import { ensureOptionP } from '../ensureOption'
 import { ProducerBP } from '../models/Producer'
 

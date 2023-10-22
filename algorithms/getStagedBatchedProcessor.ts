@@ -1,7 +1,7 @@
 import { parallelMap } from 'libs/utils/promise'
 import { Result } from 'libs/utils/Result'
-import { Mapper, MapperP } from '../../generic/models/Mapper'
 import { $ts } from '../../generic/models/Thought'
+import { Mapper, MapperP } from '../../utils/Mapper'
 import { splitResults } from '../../utils/Result/splitResults'
 import { ProducerB, ProducerBP } from '../models/Producer'
 

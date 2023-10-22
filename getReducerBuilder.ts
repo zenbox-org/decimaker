@@ -1,5 +1,5 @@
 import { isEqual } from 'lodash-es'
-import { Filter } from '../generic/models/Filter'
+import { Filter } from '../utils/Filter'
 import { FunCtx } from './get'
 import { Positivity } from './models/Positivity'
 import { Reducer } from './models/Reducer'

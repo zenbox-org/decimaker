@@ -1,6 +1,6 @@
 import { chooseOneWrappedSimpleStatic } from 'libs/decimaker/choose'
 import { OptionN } from 'libs/decimaker/models/Option'
-import { Filter } from '../../generic/models/Filter'
+import { Filter } from '../../utils/Filter'
 import { $ts } from '../../generic/models/Thought'
 import { todo } from '../../utils/todo'
 

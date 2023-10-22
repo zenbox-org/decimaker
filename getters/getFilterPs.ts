@@ -1,5 +1,5 @@
 import { ZodSchema } from 'zod'
-import { Filter, FilterP } from '../../generic/models/Filter'
+import { Filter, FilterP } from '../../utils/Filter'
 
 export function getFilterPs<Option>(schema: ZodSchema<Option>, filters: FilterP<Option>[]) {
   // if (!schema) throw task(`Create a schema for ${name}`, '(instruction for creating a schema)')

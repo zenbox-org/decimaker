@@ -1,5 +1,5 @@
 import { BigNumber } from 'libs/utils/BigNumber/utils'
-import { EstimatorP } from '../generic/models/Estimator'
+import { EstimatorP } from '../utils/Estimator'
 
 export async function getEstimatorBigNumber<Obj>(): Promise<EstimatorP<Obj, BigNumber>> {
   const options: EstimatorP<Obj, BigNumber>[] = [

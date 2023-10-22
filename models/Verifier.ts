@@ -1,6 +1,6 @@
-import { Filter } from '../../generic/models/Filter'
-import { Mapper, MapperTwoSym } from '../../generic/models/Mapper'
+import { Filter } from '../../utils/Filter'
 import { Asserter, AsserterTwoSym } from '../../utils/Asserter'
+import { Mapper, MapperTwoSym } from '../../utils/Mapper'
 
 /*
  * NOTE: Use original types

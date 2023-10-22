@@ -1,5 +1,5 @@
 import { ensureFind } from 'libs/utils/ensure'
-import { Filter, FilterP } from '../../generic/models/Filter'
+import { Filter, FilterP } from '../../utils/Filter'
 import { OptionNotFound } from '../tasks'
 
 export async function getFirstAcceptableStatic<Option>(filter: FilterP<Option>, options: Option[]): Promise<Option> {

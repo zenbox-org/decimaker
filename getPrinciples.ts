@@ -1,6 +1,6 @@
 import { BigNumber } from 'libs/utils/BigNumber/utils'
-import { AlwaysOneP, EstimatorP } from '../generic/models/Estimator'
-import { AlwaysTrueP, FilterP } from '../generic/models/Filter'
+import { AlwaysOneP, EstimatorP } from '../utils/Estimator'
+import { AlwaysTrueP, FilterP } from '../utils/Filter'
 import { axiom, NaturalPhrase, theorem } from '../programming/models/NaturalPhrase'
 import { chooseManyP } from './choose'
 import { ProducerBatchStaticP } from './models/Producer'

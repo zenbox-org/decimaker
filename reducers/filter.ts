@@ -1,4 +1,4 @@
-import { FilterP } from '../../generic/models/Filter'
+import { FilterP } from '../../utils/Filter'
 
 /**
  * NOTE: Not a reducer

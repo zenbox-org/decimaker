@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { todo } from 'libs/utils/todo'
 import { z } from 'zod'
-import { BooleanFilter, BooleanFilterSchema, Filter } from '../../generic/models/Filter'
+import { BooleanFilter, BooleanFilterSchema, Filter } from '../../utils/Filter'
 import { $ts } from '../../generic/models/Thought'
 import { ensureOneWrappedStatic } from '../choose'
 

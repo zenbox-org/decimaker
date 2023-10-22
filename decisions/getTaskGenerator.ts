@@ -1,6 +1,6 @@
 import { todo } from 'libs/utils/todo'
-import { AlwaysOne, EstimatorBigNum, TodoEstimatorBigNum } from '../../generic/models/Estimator'
-import { Filter } from '../../generic/models/Filter'
+import { AlwaysOne, EstimatorBigNum, TodoEstimatorBigNum } from '../../utils/Estimator'
+import { Filter } from '../../utils/Filter'
 import { chooseManyWrappedSimpleStatic, chooseManyWrappedStatic, ensureOneStatic } from '../choose'
 import { Option } from '../models/Option'
 import { allTaskGenerators } from './data/allTaskGenerators'

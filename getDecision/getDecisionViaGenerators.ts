@@ -1,6 +1,6 @@
 /* eslint-disable require-yield */
 import { impl } from 'libs/utils/todo'
-import { FilterP } from '../../generic/models/Filter'
+import { FilterP } from '../../utils/Filter'
 import { Type } from '../../programming/models/Type'
 import { getName, getType } from '../getIllustration'
 import { ProducerBatchStaticP } from '../models/Producer'

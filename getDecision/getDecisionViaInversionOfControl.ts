@@ -1,6 +1,6 @@
 import { BigNumber } from 'libs/utils/BigNumber/utils'
 import { impl } from 'libs/utils/todo'
-import { EstimatorP } from '../../generic/models/Estimator'
+import { EstimatorP } from '../../utils/Estimator'
 import { Type } from '../../programming/models/Type'
 import { getName, getType } from '../getIllustration'
 

@@ -1,6 +1,6 @@
 import { BigNumber } from 'libs/utils/BigNumber/utils'
-import { EstimatorP } from '../../generic/models/Estimator'
-import { FilterP } from '../../generic/models/Filter'
+import { EstimatorP } from '../../utils/Estimator'
+import { FilterP } from '../../utils/Filter'
 import { ensureOneStaticP } from '../choose'
 import { OptionNotFound } from '../tasks'
 

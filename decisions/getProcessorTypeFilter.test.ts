@@ -1,7 +1,7 @@
 import { expect } from 'libs/chai/init'
 import { z } from 'zod'
 import { Many, One, Two, Zero } from '../../generic/data/allGuesstimates'
-import { ufbn } from '../../generic/models/Estimator'
+import { ufbn } from '../../utils/Estimator'
 import { GuesstimateSchema } from '../../generic/models/Guesstimate'
 import { $ts, ThoughtsSchema } from '../../generic/models/Thought'
 import { ensureOneSimpleStatic } from '../choose'

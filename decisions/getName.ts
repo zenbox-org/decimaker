@@ -1,8 +1,8 @@
 import { chooseOneWrappedSimpleStatic } from 'libs/decimaker/choose'
 import { Option } from 'libs/decimaker/models/Option'
 import { todo } from 'libs/utils/todo'
-import { EstimatorBigNum } from '../../generic/models/Estimator'
-import { Filter } from '../../generic/models/Filter'
+import { EstimatorBigNum } from '../../utils/Estimator'
+import { Filter } from '../../utils/Filter'
 import { $ts } from '../../generic/models/Thought'
 
 interface NameOption extends Option<string> {

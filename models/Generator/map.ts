@@ -1,4 +1,4 @@
-import { Mapper } from '../../../generic/models/Mapper'
+import { Mapper } from '../../../utils/Mapper'
 
 export const map = <In, Out>(mapper: Mapper<In, Out>) => (generator: Generator<In>) => {
   const values: Out[] = []

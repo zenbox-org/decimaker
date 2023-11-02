@@ -19,7 +19,7 @@ import { parallel } from 'libs/utils/promise'
 
 export interface OptionInfo<Opt, Num> {
   option: Opt,
-  estimate?: Num
+  estimate?: Num | undefined
 }
 
 export type Generator<Result> = () => Promise<Result>
@@ -42,12 +42,13 @@ export function getOptions<Option, Num>(infos: OptionInfo<Option, Num>[], compar
 }
 
 export async function getOptionsBy<Option, Num>(options: Option[], estimator: EstimatorMaybe<Option, Num>, comparator: Comparator<Option, Num>): Promise<Option[]> {
-  return getOptions(await parallel<OptionInfo<Option, Num>>(options.map(async option => {
+  const infos = await parallel<OptionInfo<Option, Num>>(options.map(async option => {
     return {
       option,
       estimate: await estimator(option),
     }
-  })), comparator)
+  }))
+  return getOptions(infos, comparator)
 }
 
 export function compareBigNumber<Option>(a: OptionInfo<Option, BigNumber>, b: OptionInfo<Option, BigNumber>) {

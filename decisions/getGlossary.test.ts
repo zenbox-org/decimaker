@@ -1,3 +1,4 @@
+import { test } from '@jest/globals'
 import { expect } from 'libs/chai/init'
 import { z } from 'zod'
 import { NotesSchema } from '../../generic/models/Notes'
